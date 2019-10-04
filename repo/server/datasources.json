@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "DnDVirtualAssistant",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

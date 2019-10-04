@@ -1,0 +1,1279 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "a,are,goblin,of,stat,the,what": {
+            "domain": "default",
+            "intent": "question.monster"
+          },
+          "are,of,return,splugoth,the,the,trait,what": {
+            "domain": "default",
+            "intent": "question.monster"
+          },
+          "a,is,of,speed,the,what,zombi": {
+            "domain": "default",
+            "intent": "question.monster"
+          },
+          "ebondeath,hp,is,of,the,what": {
+            "domain": "default",
+            "intent": "question.monster"
+          },
+          "ac,amphisbaena,is,of,the,what": {
+            "domain": "default",
+            "intent": "question.monster"
+          },
+          "are,constitut,for,rule,the,what": {
+            "domain": "default",
+            "intent": "question.rule"
+          },
+          "are,for,initi,rule,the,what": {
+            "domain": "default",
+            "intent": "question.rule"
+          },
+          "constitut,doe,from,heal,involv,rest": {
+            "domain": "default",
+            "intent": "question.rule"
+          },
+          "attack,bonus,damag,doe,increas,my": {
+            "domain": "default",
+            "intent": "question.rule"
+          },
+          "advantag,do,doe,what": {
+            "domain": "default",
+            "intent": "question.rule"
+          },
+          "amber,an,describ,me,to": {
+            "domain": "default",
+            "intent": "question.general"
+          },
+          "a,burglar,describ,me,pack,to": {
+            "domain": "default",
+            "intent": "question.general"
+          },
+          "a,describ,ship": {
+            "domain": "default",
+            "intent": "question.general"
+          },
+          "absorb,describ,element,spell,the": {
+            "domain": "default",
+            "intent": "question.spell."
+          },
+          "4,a,at,bard,can,level,spell,use,what": {
+            "domain": "default",
+            "intent": "question.spell"
+          },
+          "breath,do,doe,ice,spell,the,what": {
+            "domain": "default",
+            "intent": "question.spell"
+          },
+          "action,can,fighter,surg,use": {
+            "domain": "default",
+            "intent": "question.spell"
+          },
+          "barbarian,can,firebal,use": {
+            "domain": "default",
+            "intent": "question.spell"
+          },
+          "can,heal,learn,monk": {
+            "domain": "default",
+            "intent": "question.spell"
+          },
+          "a,are,barbarian,class,featur,of,the,what": {
+            "domain": "default",
+            "intent": "question.class"
+          },
+          "a,are,of,profici,sorcer,start,the,what": {
+            "domain": "default",
+            "intent": "question.class"
+          },
+          "4,a,artic,can,encount,in,level,the,what": {
+            "domain": "default",
+            "intent": "question.randomEncounter"
+          },
+          "9,a,can,desert,encount,in,level,the,what": {
+            "domain": "default",
+            "intent": "question.randomEncounter"
+          },
+          "5,at,desert,encount,in,level,random,the": {
+            "domain": "default",
+            "intent": "question.randomEncounter"
+          }
+        },
+        "intentDict": {
+          "question.monster": "default",
+          "question.rule": "default",
+          "question.general": "default",
+          "question.spell.": "default",
+          "question.spell": "default",
+          "question.class": "default",
+          "question.randomEncounter": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "question.monster",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "stat",
+                  "of",
+                  "a",
+                  "goblin"
+                ]
+              },
+              {
+                "intent": "question.monster",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "trait",
+                  "of",
+                  "splugoth",
+                  "the",
+                  "return"
+                ]
+              },
+              {
+                "intent": "question.monster",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "speed",
+                  "of",
+                  "a",
+                  "zombi"
+                ]
+              },
+              {
+                "intent": "question.monster",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "hp",
+                  "of",
+                  "ebondeath"
+                ]
+              },
+              {
+                "intent": "question.monster",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "ac",
+                  "of",
+                  "amphisbaena"
+                ]
+              },
+              {
+                "intent": "question.rule",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "rule",
+                  "for",
+                  "constitut"
+                ]
+              },
+              {
+                "intent": "question.rule",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "rule",
+                  "for",
+                  "initi"
+                ]
+              },
+              {
+                "intent": "question.rule",
+                "tokens": [
+                  "doe",
+                  "heal",
+                  "from",
+                  "rest",
+                  "involv",
+                  "constitut"
+                ]
+              },
+              {
+                "intent": "question.rule",
+                "tokens": [
+                  "doe",
+                  "attack",
+                  "bonus",
+                  "increas",
+                  "my",
+                  "damag"
+                ]
+              },
+              {
+                "intent": "question.rule",
+                "tokens": [
+                  "what",
+                  "doe",
+                  "advantag",
+                  "do"
+                ]
+              },
+              {
+                "intent": "question.general",
+                "tokens": [
+                  "describ",
+                  "to",
+                  "me",
+                  "an",
+                  "amber"
+                ]
+              },
+              {
+                "intent": "question.general",
+                "tokens": [
+                  "describ",
+                  "to",
+                  "me",
+                  "a",
+                  "burglar",
+                  "pack"
+                ]
+              },
+              {
+                "intent": "question.general",
+                "tokens": [
+                  "describ",
+                  "a",
+                  "ship"
+                ]
+              },
+              {
+                "intent": "question.spell.",
+                "tokens": [
+                  "describ",
+                  "the",
+                  "spell",
+                  "absorb",
+                  "element"
+                ]
+              },
+              {
+                "intent": "question.spell",
+                "tokens": [
+                  "what",
+                  "spell",
+                  "can",
+                  "a",
+                  "bard",
+                  "use",
+                  "at",
+                  "level",
+                  "4"
+                ]
+              },
+              {
+                "intent": "question.spell",
+                "tokens": [
+                  "what",
+                  "doe",
+                  "the",
+                  "spell",
+                  "ice",
+                  "breath",
+                  "do"
+                ]
+              },
+              {
+                "intent": "question.spell",
+                "tokens": [
+                  "can",
+                  "fighter",
+                  "use",
+                  "action",
+                  "surg"
+                ]
+              },
+              {
+                "intent": "question.spell",
+                "tokens": [
+                  "can",
+                  "barbarian",
+                  "use",
+                  "firebal"
+                ]
+              },
+              {
+                "intent": "question.spell",
+                "tokens": [
+                  "can",
+                  "monk",
+                  "learn",
+                  "heal"
+                ]
+              },
+              {
+                "intent": "question.class",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "class",
+                  "featur",
+                  "of",
+                  "a",
+                  "barbarian"
+                ]
+              },
+              {
+                "intent": "question.class",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "start",
+                  "profici",
+                  "of",
+                  "a",
+                  "sorcer"
+                ]
+              },
+              {
+                "intent": "question.randomEncounter",
+                "tokens": [
+                  "what",
+                  "can",
+                  "a",
+                  "level",
+                  "4",
+                  "encount",
+                  "in",
+                  "the",
+                  "artic"
+                ]
+              },
+              {
+                "intent": "question.randomEncounter",
+                "tokens": [
+                  "what",
+                  "can",
+                  "a",
+                  "level",
+                  "9",
+                  "encount",
+                  "in",
+                  "the",
+                  "desert"
+                ]
+              },
+              {
+                "intent": "question.randomEncounter",
+                "tokens": [
+                  "random",
+                  "encount",
+                  "in",
+                  "the",
+                  "desert",
+                  "at",
+                  "level",
+                  "5"
+                ]
+              }
+            ],
+            "features": {
+              "4": 2,
+              "5": 1,
+              "9": 1,
+              "what": 14,
+              "are": 6,
+              "the": 15,
+              "stat": 1,
+              "of": 7,
+              "a": 9,
+              "goblin": 1,
+              "trait": 1,
+              "splugoth": 1,
+              "return": 1,
+              "is": 3,
+              "speed": 1,
+              "zombi": 1,
+              "hp": 1,
+              "ebondeath": 1,
+              "ac": 1,
+              "amphisbaena": 1,
+              "rule": 2,
+              "for": 2,
+              "constitut": 2,
+              "initi": 1,
+              "doe": 4,
+              "heal": 2,
+              "from": 1,
+              "rest": 1,
+              "involv": 1,
+              "attack": 1,
+              "bonus": 1,
+              "increas": 1,
+              "my": 1,
+              "damag": 1,
+              "advantag": 1,
+              "do": 2,
+              "describ": 4,
+              "to": 2,
+              "me": 2,
+              "an": 1,
+              "amber": 1,
+              "burglar": 1,
+              "pack": 1,
+              "ship": 1,
+              "spell": 3,
+              "absorb": 1,
+              "element": 1,
+              "can": 6,
+              "bard": 1,
+              "use": 3,
+              "at": 2,
+              "level": 4,
+              "ice": 1,
+              "breath": 1,
+              "fighter": 1,
+              "action": 1,
+              "surg": 1,
+              "barbarian": 2,
+              "firebal": 1,
+              "monk": 1,
+              "learn": 1,
+              "class": 1,
+              "featur": 1,
+              "start": 1,
+              "profici": 1,
+              "sorcer": 1,
+              "encount": 3,
+              "in": 3,
+              "artic": 1,
+              "desert": 2,
+              "random": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  72,
+                  8
+                ],
+                "layers": [
+                  {
+                    "4": {},
+                    "5": {},
+                    "9": {},
+                    "what": {},
+                    "are": {},
+                    "the": {},
+                    "stat": {},
+                    "of": {},
+                    "a": {},
+                    "goblin": {},
+                    "trait": {},
+                    "splugoth": {},
+                    "return": {},
+                    "is": {},
+                    "speed": {},
+                    "zombi": {},
+                    "hp": {},
+                    "ebondeath": {},
+                    "ac": {},
+                    "amphisbaena": {},
+                    "rule": {},
+                    "for": {},
+                    "constitut": {},
+                    "initi": {},
+                    "doe": {},
+                    "heal": {},
+                    "from": {},
+                    "rest": {},
+                    "involv": {},
+                    "attack": {},
+                    "bonus": {},
+                    "increas": {},
+                    "my": {},
+                    "damag": {},
+                    "advantag": {},
+                    "do": {},
+                    "describ": {},
+                    "to": {},
+                    "me": {},
+                    "an": {},
+                    "amber": {},
+                    "burglar": {},
+                    "pack": {},
+                    "ship": {},
+                    "spell": {},
+                    "absorb": {},
+                    "element": {},
+                    "can": {},
+                    "bard": {},
+                    "use": {},
+                    "at": {},
+                    "level": {},
+                    "ice": {},
+                    "breath": {},
+                    "fighter": {},
+                    "action": {},
+                    "surg": {},
+                    "barbarian": {},
+                    "firebal": {},
+                    "monk": {},
+                    "learn": {},
+                    "class": {},
+                    "featur": {},
+                    "start": {},
+                    "profici": {},
+                    "sorcer": {},
+                    "encount": {},
+                    "in": {},
+                    "artic": {},
+                    "desert": {},
+                    "random": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "question.monster": {
+                      "bias": 0.071064007,
+                      "weights": {
+                        "4": -0.503796995,
+                        "9": -0.139328226,
+                        "what": 1.111708879,
+                        "are": -0.700410485,
+                        "the": 1.5472157,
+                        "stat": 3.275040388,
+                        "of": 4.481794834,
+                        "a": -0.569015741,
+                        "goblin": 3.275040388,
+                        "trait": 1.996078372,
+                        "splugoth": 1.996078372,
+                        "return": 1.996078372,
+                        "is": 3.286146641,
+                        "speed": 1.285679936,
+                        "zombi": 1.285679936,
+                        "hp": 1.003215551,
+                        "ebondeath": 1.003215551,
+                        "ac": 0.997252405,
+                        "amphisbaena": 0.997252405,
+                        "rule": -1.896060705,
+                        "for": -1.896060705,
+                        "constitut": -1.077696085,
+                        "initi": -0.83031404,
+                        "doe": -0.937897682,
+                        "heal": -0.011949281,
+                        "from": -0.011949281,
+                        "rest": -0.011949281,
+                        "involv": -0.011949281,
+                        "attack": -0.095046073,
+                        "bonus": -0.095046073,
+                        "increas": -0.095046073,
+                        "my": -0.095046073,
+                        "damag": -0.095046073,
+                        "advantag": -0.406865329,
+                        "do": -0.830902278,
+                        "describ": -0.801271021,
+                        "to": -0.261337966,
+                        "me": -0.261337966,
+                        "an": -0.074148551,
+                        "amber": -0.074148551,
+                        "burglar": -0.187189415,
+                        "pack": -0.187189415,
+                        "ship": -0.223952174,
+                        "spell": -1.084640145,
+                        "absorb": -0.315980852,
+                        "element": -0.315980852,
+                        "can": -0.643125176,
+                        "bard": -0.344622314,
+                        "use": -0.344622314,
+                        "at": -0.344622314,
+                        "level": -0.643125176,
+                        "ice": -0.42403695,
+                        "breath": -0.42403695,
+                        "barbarian": -2.095022678,
+                        "class": -2.095022678,
+                        "featur": -2.095022678,
+                        "start": -1.980445504,
+                        "profici": -1.980445504,
+                        "sorcer": -1.980445504,
+                        "encount": -0.298502922,
+                        "in": -0.298502922,
+                        "artic": -0.159174696,
+                        "desert": -0.139328226,
+                        "nonefeature": -0.060645111
+                      }
+                    },
+                    "question.rule": {
+                      "bias": 1.143955579,
+                      "weights": {
+                        "4": -0.41341868,
+                        "5": -0.047705751,
+                        "what": 2.265222073,
+                        "are": 1.490941882,
+                        "the": -1.300922632,
+                        "stat": -0.175386339,
+                        "of": -1.936594009,
+                        "a": -2.045446157,
+                        "goblin": -0.175386339,
+                        "trait": -0.57141763,
+                        "splugoth": -0.57141763,
+                        "return": -0.57141763,
+                        "is": -0.138193339,
+                        "hp": -0.091174275,
+                        "ebondeath": -0.091174275,
+                        "ac": -0.047019068,
+                        "amphisbaena": -0.047019068,
+                        "rule": 3.28934288,
+                        "for": 3.28934288,
+                        "constitut": 2.339299917,
+                        "initi": 2.3060956,
+                        "doe": 4.127527714,
+                        "heal": 0.818153381,
+                        "from": 1.356053114,
+                        "rest": 1.356053114,
+                        "involv": 1.356053114,
+                        "attack": 1.445582509,
+                        "bonus": 1.445582509,
+                        "increas": 1.445582509,
+                        "my": 1.445582509,
+                        "damag": 1.445582509,
+                        "advantag": 3.591889858,
+                        "do": 1.325892925,
+                        "describ": -1.013950586,
+                        "to": -0.477693588,
+                        "me": -0.477693588,
+                        "an": -0.268937737,
+                        "amber": -0.268937737,
+                        "burglar": -0.208755866,
+                        "pack": -0.208755866,
+                        "ship": -0.196288124,
+                        "spell": -3.01938343,
+                        "absorb": -0.339968801,
+                        "element": -0.339968801,
+                        "can": -1.081106663,
+                        "bard": -0.41341868,
+                        "use": -0.54320699,
+                        "at": -0.46112442,
+                        "level": -0.46112442,
+                        "ice": -2.265996218,
+                        "breath": -2.265996218,
+                        "fighter": -0.087069489,
+                        "action": -0.087069489,
+                        "surg": -0.087069489,
+                        "barbarian": -0.653266668,
+                        "firebal": -0.042718865,
+                        "monk": -0.537899673,
+                        "learn": -0.537899673,
+                        "class": -0.610547781,
+                        "featur": -0.610547781,
+                        "start": -0.441049218,
+                        "profici": -0.441049218,
+                        "sorcer": -0.441049218,
+                        "encount": -0.047705751,
+                        "in": -0.047705751,
+                        "desert": -0.047705751,
+                        "random": -0.047705751,
+                        "nonefeature": -1.043444037
+                      }
+                    },
+                    "question.general": {
+                      "bias": 1.030788487,
+                      "weights": {
+                        "4": -0.371575505,
+                        "9": -0.064033754,
+                        "what": -1.082176566,
+                        "are": -0.488355696,
+                        "the": -1.860931277,
+                        "stat": -0.038696237,
+                        "of": -0.631904125,
+                        "a": 2.974361181,
+                        "goblin": -0.038696237,
+                        "is": -0.143548474,
+                        "speed": -0.143548474,
+                        "zombi": -0.143548474,
+                        "constitut": -0.130525798,
+                        "doe": -0.297151268,
+                        "heal": -0.238487497,
+                        "from": -0.130525798,
+                        "rest": -0.130525798,
+                        "involv": -0.130525798,
+                        "attack": -0.151962459,
+                        "bonus": -0.151962459,
+                        "increas": -0.151962459,
+                        "my": -0.151962459,
+                        "damag": -0.151962459,
+                        "do": -0.014663028,
+                        "describ": 4.549655914,
+                        "to": 1.812838197,
+                        "me": 1.812838197,
+                        "an": 1.627442718,
+                        "amber": 1.627442718,
+                        "burglar": 0.185395211,
+                        "pack": 0.185395211,
+                        "ship": 3.856479645,
+                        "spell": -1.47523284,
+                        "absorb": -1.119662285,
+                        "element": -1.119662285,
+                        "can": -0.632885814,
+                        "bard": -0.340907544,
+                        "use": -0.430222392,
+                        "at": -0.340907544,
+                        "level": -0.435609281,
+                        "ice": -0.014663028,
+                        "breath": -0.014663028,
+                        "fighter": -0.055958785,
+                        "action": -0.055958785,
+                        "surg": -0.055958785,
+                        "barbarian": -0.297878146,
+                        "firebal": -0.033356026,
+                        "monk": -0.107961699,
+                        "learn": -0.107961699,
+                        "class": -0.264522135,
+                        "featur": -0.264522135,
+                        "start": -0.185137287,
+                        "profici": -0.185137287,
+                        "sorcer": -0.185137287,
+                        "encount": -0.0947017,
+                        "in": -0.0947017,
+                        "artic": -0.030667949,
+                        "desert": -0.064033754,
+                        "nonefeature": -0.919818163
+                      }
+                    },
+                    "question.spell.": {
+                      "bias": 0.074754588,
+                      "weights": {
+                        "4": -0.149193242,
+                        "5": -0.21723482,
+                        "9": -0.013899151,
+                        "what": -1.332209349,
+                        "are": -0.323286146,
+                        "the": 1.800042391,
+                        "of": -0.351792067,
+                        "a": -1.221933842,
+                        "trait": -0.049565032,
+                        "splugoth": -0.049565032,
+                        "return": -0.049565032,
+                        "is": -0.127429202,
+                        "hp": -0.073709801,
+                        "ebondeath": -0.073709801,
+                        "ac": -0.053719394,
+                        "amphisbaena": -0.053719394,
+                        "rule": -0.098923244,
+                        "for": -0.098923244,
+                        "constitut": -0.059749041,
+                        "initi": -0.039174203,
+                        "doe": -0.718401849,
+                        "heal": -0.034443729,
+                        "do": -0.718401849,
+                        "describ": 1.886086345,
+                        "to": -0.587121546,
+                        "me": -0.587121546,
+                        "an": -0.430162936,
+                        "amber": -0.430162936,
+                        "burglar": -0.15695858,
+                        "pack": -0.15695858,
+                        "ship": -0.727085233,
+                        "spell": 2.332698107,
+                        "absorb": 3.200292349,
+                        "element": 3.200292349,
+                        "can": -0.242282704,
+                        "bard": -0.149193242,
+                        "use": -0.19393982,
+                        "at": -0.366428047,
+                        "level": -0.380327165,
+                        "ice": -0.718401849,
+                        "breath": -0.718401849,
+                        "fighter": -0.027001377,
+                        "action": -0.027001377,
+                        "surg": -0.027001377,
+                        "barbarian": -0.121990085,
+                        "firebal": -0.017745215,
+                        "monk": -0.034443729,
+                        "learn": -0.034443729,
+                        "class": -0.104244873,
+                        "featur": -0.104244873,
+                        "start": -0.070552975,
+                        "profici": -0.070552975,
+                        "sorcer": -0.070552975,
+                        "encount": -0.231133983,
+                        "in": -0.231133983,
+                        "desert": -0.231133983,
+                        "random": -0.21723482,
+                        "nonefeature": -0.107902266
+                      }
+                    },
+                    "question.spell": {
+                      "bias": 0.850912488,
+                      "weights": {
+                        "4": -0.042525094,
+                        "9": -0.529264271,
+                        "what": -0.262316763,
+                        "are": -1.052705526,
+                        "the": -0.353713572,
+                        "of": -1.090261102,
+                        "a": -1.616971135,
+                        "is": -0.045079041,
+                        "hp": -0.032096285,
+                        "ebondeath": -0.032096285,
+                        "ac": -0.01298276,
+                        "amphisbaena": -0.01298276,
+                        "rule": -0.007523467,
+                        "for": -0.007523467,
+                        "constitut": -0.76503408,
+                        "initi": -0.007523467,
+                        "doe": 0.239158168,
+                        "heal": 1.773549318,
+                        "from": -0.76503408,
+                        "rest": -0.76503408,
+                        "involv": -0.76503408,
+                        "attack": -0.403065056,
+                        "bonus": -0.403065056,
+                        "increas": -0.403065056,
+                        "my": -0.403065056,
+                        "damag": -0.403065056,
+                        "advantag": -2.194829464,
+                        "do": 1.40725708,
+                        "describ": -1.396887422,
+                        "to": -0.15432395,
+                        "me": -0.15432395,
+                        "an": -0.15432395,
+                        "amber": -0.15432395,
+                        "spell": 3.40318656,
+                        "absorb": -1.242563248,
+                        "element": -1.242563248,
+                        "can": 4.792500496,
+                        "bard": 1.043663263,
+                        "use": 3.869370222,
+                        "at": 1.043663263,
+                        "level": -0.571789443,
+                        "ice": 3.602087736,
+                        "breath": 3.602087736,
+                        "fighter": 0.997012138,
+                        "action": 0.997012138,
+                        "surg": 0.997012138,
+                        "barbarian": 1.152504683,
+                        "firebal": 1.828695059,
+                        "monk": 2.538582802,
+                        "learn": 2.538582802,
+                        "class": -0.676190257,
+                        "featur": -0.676190257,
+                        "start": -0.368991792,
+                        "profici": -0.368991792,
+                        "sorcer": -0.368991792,
+                        "encount": -1.615452528,
+                        "in": -1.615452528,
+                        "artic": -1.086188078,
+                        "desert": -0.529264271,
+                        "nonefeature": -0.834590435
+                      }
+                    },
+                    "question.class": {
+                      "bias": -0.504551073,
+                      "weights": {
+                        "4": -0.399782002,
+                        "9": -0.437331051,
+                        "what": 0.030442467,
+                        "are": 1.848133326,
+                        "the": 0.030442467,
+                        "stat": -2.119549513,
+                        "of": 1.448947072,
+                        "a": 1.38119626,
+                        "goblin": -2.119549513,
+                        "trait": -1.089644551,
+                        "splugoth": -1.089644551,
+                        "return": -1.089644551,
+                        "is": -0.980577707,
+                        "speed": -0.778846562,
+                        "zombi": -0.778846562,
+                        "hp": -0.145261183,
+                        "ebondeath": -0.145261183,
+                        "ac": -0.056469992,
+                        "amphisbaena": -0.056469992,
+                        "rule": -0.581391335,
+                        "for": -0.581391335,
+                        "constitut": -0.339988708,
+                        "initi": -0.241402581,
+                        "describ": -0.522013366,
+                        "to": -0.169383332,
+                        "me": -0.169383332,
+                        "burglar": -0.169383332,
+                        "pack": -0.169383332,
+                        "ship": -0.352629989,
+                        "can": -1.222601771,
+                        "use": -0.385489076,
+                        "level": -0.837113082,
+                        "barbarian": 2.49815011,
+                        "firebal": -0.385489076,
+                        "class": 2.883640051,
+                        "featur": 2.883640051,
+                        "start": 2.755079031,
+                        "profici": 2.755079031,
+                        "sorcer": 2.755079031,
+                        "encount": -0.837113082,
+                        "in": -0.837113082,
+                        "artic": -0.399782002,
+                        "desert": -0.437331051,
+                        "nonefeature": -0.132037193
+                      }
+                    },
+                    "question.randomEncounter": {
+                      "bias": -0.165432769,
+                      "weights": {
+                        "4": 0.602472544,
+                        "5": 0.812761605,
+                        "9": 0.693890512,
+                        "what": -0.285688221,
+                        "are": -1.060559392,
+                        "the": 1.415981889,
+                        "stat": -0.631129205,
+                        "of": -1.476797938,
+                        "a": 0.151576594,
+                        "goblin": -0.631129205,
+                        "trait": -0.343377262,
+                        "splugoth": -0.343377262,
+                        "return": -0.343377262,
+                        "is": -0.502291441,
+                        "speed": -0.370516896,
+                        "zombi": -0.370516896,
+                        "hp": -0.114370629,
+                        "ebondeath": -0.114370629,
+                        "ac": -0.017403893,
+                        "amphisbaena": -0.017403893,
+                        "rule": -0.086052984,
+                        "for": -0.086052984,
+                        "constitut": -0.093056321,
+                        "initi": -0.025202218,
+                        "doe": -0.085112564,
+                        "heal": -0.274467856,
+                        "from": -0.032205548,
+                        "rest": -0.032205548,
+                        "involv": -0.032205548,
+                        "attack": -0.033706989,
+                        "bonus": -0.033706989,
+                        "increas": -0.033706989,
+                        "my": -0.033706989,
+                        "damag": -0.033706989,
+                        "advantag": -0.019200018,
+                        "do": -0.019200018,
+                        "describ": -0.279949099,
+                        "to": -0.109208547,
+                        "me": -0.109208547,
+                        "an": -0.032550026,
+                        "amber": -0.032550026,
+                        "burglar": -0.076658525,
+                        "pack": -0.076658525,
+                        "ship": -0.066481456,
+                        "spell": -1.07822597,
+                        "absorb": -0.104259059,
+                        "element": -0.104259059,
+                        "can": 0.916479349,
+                        "bard": -0.973967075,
+                        "use": -1.11158812,
+                        "at": -0.161205426,
+                        "level": 2.109125376,
+                        "fighter": -0.083688304,
+                        "action": -0.083688304,
+                        "surg": -0.083688304,
+                        "barbarian": -0.053933077,
+                        "firebal": -0.053933077,
+                        "monk": -0.242262274,
+                        "learn": -0.242262274,
+                        "encount": 3.083091974,
+                        "in": 3.083091974,
+                        "artic": 1.5764395,
+                        "desert": 1.506652355,
+                        "random": 0.812761605,
+                        "nonefeature": -0.132170305
+                      }
+                    },
+                    "None": {
+                      "bias": 2.583321072,
+                      "weights": {
+                        "4": -0.002606129,
+                        "5": -0.227668941,
+                        "what": -0.882135689,
+                        "are": -0.298367202,
+                        "the": -0.916002393,
+                        "stat": -0.076138049,
+                        "of": -0.358094692,
+                        "a": -0.760639071,
+                        "goblin": -0.076138049,
+                        "trait": -0.056354493,
+                        "splugoth": -0.056354493,
+                        "return": -0.056354493,
+                        "is": -0.22560212,
+                        "speed": -0.035280898,
+                        "zombi": -0.035280898,
+                        "hp": -0.096866913,
+                        "ebondeath": -0.096866913,
+                        "ac": -0.093454309,
+                        "amphisbaena": -0.093454309,
+                        "rule": -0.165874586,
+                        "for": -0.165874586,
+                        "constitut": -0.276221603,
+                        "initi": -0.132092208,
+                        "doe": -0.922708273,
+                        "heal": -0.63810426,
+                        "from": -0.242439196,
+                        "rest": -0.242439196,
+                        "involv": -0.242439196,
+                        "attack": -0.324708849,
+                        "bonus": -0.324708849,
+                        "increas": -0.324708849,
+                        "my": -0.324708849,
+                        "damag": -0.324708849,
+                        "advantag": -0.355560273,
+                        "do": -0.355560273,
+                        "describ": -1.128367662,
+                        "to": -0.391119033,
+                        "me": -0.391119033,
+                        "an": -0.317389846,
+                        "amber": -0.317389846,
+                        "burglar": -0.073729195,
+                        "pack": -0.073729195,
+                        "ship": -0.572884679,
+                        "spell": -0.166970327,
+                        "absorb": -0.164364204,
+                        "element": -0.164364204,
+                        "can": -1.06115067,
+                        "bard": -0.002606129,
+                        "use": -0.665485442,
+                        "at": -0.230275065,
+                        "level": -0.230275065,
+                        "fighter": -0.272578001,
+                        "action": -0.272578001,
+                        "surg": -0.272578001,
+                        "barbarian": -0.390301317,
+                        "firebal": -0.390301317,
+                        "monk": -0.395665079,
+                        "learn": -0.395665079,
+                        "encount": -0.227668941,
+                        "in": -0.227668941,
+                        "desert": -0.227668941,
+                        "random": -0.227668941,
+                        "nonefeature": 8.974957466
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "what are the stats of a goblin"
+      ],
+      [
+        "en",
+        "what are the traits of Splugoth the Returned"
+      ],
+      [
+        "en",
+        "what is the speed of a zombie"
+      ],
+      [
+        "en",
+        "what is the hp of Ebondeath"
+      ],
+      [
+        "en",
+        "what is the ac of Amphisbaena"
+      ],
+      [
+        "en",
+        "what are the rules for constitution"
+      ],
+      [
+        "en",
+        "what are the rules for initiative"
+      ],
+      [
+        "en",
+        "does healing from rest involve constitution"
+      ],
+      [
+        "en",
+        "does attack bonus increase my damage"
+      ],
+      [
+        "en",
+        "what does advantage do"
+      ],
+      [
+        "en",
+        "describe to me an amber"
+      ],
+      [
+        "en",
+        "describe to me a burglar pack"
+      ],
+      [
+        "en",
+        "describe a ship"
+      ],
+      [
+        "en",
+        "describe the spell absorb elements"
+      ],
+      [
+        "en",
+        "what spells can a bards use at level 4"
+      ],
+      [
+        "en",
+        "what does the spell ice breath do"
+      ],
+      [
+        "en",
+        "can fighters use action surge"
+      ],
+      [
+        "en",
+        "can barbarians use fireball"
+      ],
+      [
+        "en",
+        "can monks learn heal"
+      ],
+      [
+        "en",
+        "what are the class features of a barbarian?"
+      ],
+      [
+        "en",
+        "what are the starting proficiencies of a sorcerer?"
+      ],
+      [
+        "en",
+        "what can a level 4 encounter in the artic?"
+      ],
+      [
+        "en",
+        "what can a level 9 encounter in the desert?"
+      ],
+      [
+        "en",
+        "random encounter in the desert at level 5?"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {},
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
